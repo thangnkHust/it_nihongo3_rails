@@ -1,5 +1,11 @@
 <h1>Profile</h1>
 
+<div style="width: 50px, heigh: auto">
+  <% if @user.avatar.attached? %>
+    <%= image_tag @user.avatar, :style => "width: 50%" %>
+  <% end %>
+</div>
+
 <h3>Name</h3>
 <%= @user.name %>
 
